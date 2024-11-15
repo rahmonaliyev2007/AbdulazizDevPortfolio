@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    transition: all 0.2s ease;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1260px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+/* ==================================== ====================== ============= =========== ============== ========== */
+
+
+header {
+    padding-bottom: 230px;
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        box-sizing: border-box;
+        backdrop-filter: blur(50px);
+        min-width: 300px;
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+
+
+            .logo {
+                padding: 5px 20px;
+                text-transform: uppercase;
+                color: white;
+                font-size: 20px;
+                line-height: 21px;
+                background-color: rgba(78, 159, 13, 1);
+                border-radius: 5px;
+                box-shadow: inset 0 0 5px 5px rgb(52, 112, 3);
+                cursor: pointer;
+            }
+
+            ul {
+                display: flex;
+
+                li a {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: rgba(78, 159, 13, 1);
+                    padding: 20px;
+                    display: block;
+                    min-width: 89px;
+                }
+
+                li .korzina {
+                    display: inline-block;
+                    background-color: white;
+                    border-radius: 50%;
+                    text-align: center;
+                    width: 17px;
+                    height: 17px;
+                    line-height: 16px;
+                    font-size: 15px;
+                }
+
+                li:hover a {
+                    color: white;
+                    background-color: rgba(78, 159, 13, 1);
+                }
+
+                li:hover a span {
+                    color: #4CAF50;
+                }
+            }
+
+            .navbar-menu {
+                display: none;
+            }
+        }
+
+        .navbar-menu {
+            .knopka {
+                padding: 0;
+                color: rgba(78, 159, 13, 1);
+                cursor: pointer;
+                font-size: 40px;
+                line-height: 40px;
+
+
+
+            }
+
+            .navbar576 {
+                padding-top: 60px;
+                display: block;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+                backdrop-filter: blur(10px);
+                position: fixed;
+                width: 40%;
+                height: 30vh;
+                top: 0;
+                right: 0;
+                border-radius: 0 0 0 5px;
+            }
+
+            .navbar576 a {
+                color: white;
+                display: block;
+                text-align: right;
+                padding: 10px;
+            }
+
+            .korzina {
+                display: inline-block;
+                background-color: rgba(78, 159, 13, 1);
+                border-radius: 50%;
+                text-align: center;
+                width: 17px;
+                height: 17px;
+                line-height: 16px;
+                font-size: 15px;
+            }
+
+            .navbar576 a:hover {
+                background-color: #4CAF50;
+            }
+
+            .navbar_close {
+                position: absolute;
+                top: 25px;
+                right: 10px;
+                background-color: #4CAF50;
+                border-radius: 5px;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 20px;
+                padding: 5px 20px;
+                box-shadow: inset 0 0 5px 5px rgb(52, 112, 3);
+            }
+
+            #knopka:checked~.navbar576 {
+                display: block;
+            }
+
+            #knopka:not(:checked)~.navbar576 {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+/* ========================================================== ======================  ======================== ======== */
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+}
+
+
+@media screen and (max-width:728px) {
+
+    header {
+        .navbar {
+            nav {
+                ul {
+                    li a {
+                        font-size: 15px;
+                        line-height: 16px;
+                        padding: 20px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    header .navbar nav .navbar-menu {
+        display: inline-block;
+    }
+
+    header .navbar nav ul {
+        display: none;
+    }
+
+    header .navbar {
+        padding-top: 20px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+
+}
+
+@media screen and (max-width:400px){
+    
+}
