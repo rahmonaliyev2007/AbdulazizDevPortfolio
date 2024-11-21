@@ -527,7 +527,8 @@ footer{
     .footer-bottom{
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        align-items: center;
+
 
         .footer-links{
             h3{
