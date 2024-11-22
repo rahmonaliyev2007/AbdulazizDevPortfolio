@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbdulazizDev</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./iconlar/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link
@@ -13,7 +14,7 @@
 
 <body>
     <header id="home">
-        <div class="navbar">
+        <div class="navbar" data-aos="fade-down" data-aos-duration="2000">
             <div class="container">
                 <nav>
                     <a href="./index.html" class="logo"><img src="./iconlar/logo.png" alt="Logotipe"></a>
@@ -43,7 +44,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="header-main">
+            <div class="header-main" data-aos="fade-right" data-aos-duration="1500">
                 <h2>Hi, I am</h2>
                 <h1 style="color: aliceblue;">Abdulaziz Raxmonaliyev  </h1>
                 <p>Welcome to my portfolio! Take a look at my <span>projects and skills</span></p>
@@ -55,11 +56,11 @@
 
 
     <main>
-        <section id="section1" class="section1 container">
+        <section id="section1" class="section1 container" data-aos-duration="1000" data-aos="fade-up-left">
             <h2>Projects</h2>
 
-            <div class="section1-card-group">
-                <div class="section1-card">
+            <div class="section1-card-group" data-aos="fade-down-right">
+                <div class="section1-card" data-aos="fade-right" data-aos-duration="2000">
                     <div class="section1-card-main">
                         <a href="" class="img">
                             <img src="./rasmlar/yuktashish.png" alt="">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="section1-card">
+                <div class="section1-card" data-aos="fade-up" data-aos-duration="2000">
                     <div class="section1-card-main">
                         <a href="" class="img">
                             <img src="./rasmlar/12-digital.png" alt="">
@@ -103,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="section1-card">
+                <div class="section1-card" data-aos="fade-left" data-aos-duration="2000">
                     <div class="section1-card-main">
                         <a href="" class="img">
                             <img src="./rasmlar/plitka.png" alt="">
@@ -341,6 +342,10 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
