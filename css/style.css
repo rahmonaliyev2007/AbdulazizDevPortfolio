@@ -451,6 +451,7 @@ main{
                 }
                 img{
                     max-width: 100%;
+                    filter: drop-shadow(1px 1px 10px #9865dc);
                 }
             }
         }
