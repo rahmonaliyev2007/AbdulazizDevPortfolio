@@ -12,6 +12,7 @@ html {
     overflow-x: hidden;
     font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
+    min-width: 320px;
 }
 
 .container {
